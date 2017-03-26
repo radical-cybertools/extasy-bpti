@@ -21,6 +21,7 @@ is getting anywhere near this rare state.
 
 The tarball *gmxcoco.tgz* contains a first stab at the CoCo-MD workflow for this
 project. It has been adapted from the examples used in the Edinburgh workshop
-last year. It has not yet been tested for real, and may be buggy/ based on an
-out-of-date version of EnsembleMD, etc. so please regard as a start-point rather
-than the finished product. A couple of README files are included which may help.
+last year. It has been tested on Archer and runs OK, but will probably need 
+tweaking for use on another HPC resource, and in any case the real thing will
+need more replicates and cycles. A couple of README files are included which may 
+help.
