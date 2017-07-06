@@ -34,6 +34,14 @@ _KERNEL_INFO = {
             "uses_mpi"      : True
         },
 
+        "xsede.supermic":
+        {
+            "environment" : {},
+            "pre_exec" : ["module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", "source activate coco02"],
+            "executable" : ["gmx mdrun"],
+            "uses_mpi"   : True
+        },
+
         "ncsa.bw": {
 	        "environment"   : {"FOO": "bar"},
             "pre_exec"      : ["export PATH=$PATH:/projects/sciteam/gkd/gromacs/5.1.1/20151210_OMPI20151210-DYN/install-cpu/bin",

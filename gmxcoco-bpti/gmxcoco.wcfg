@@ -3,14 +3,14 @@ Simulator 	=  'Gromacs'       # Simulator to be loaded
 analyzer        = 'CoCo'           # Analyzer to be loaded
 
 #-------------------------General------------------------------
-num_iterations 	= 2                # Number of iterations of Simulation-Analysis
+num_iterations 	= 20                # Number of iterations of Simulation-Analysis
 start_iter 	= 0                # Iteration number with which to start
-num_CUs   	= 4                # Number of tasks or Compute Units
-nsave		= 1                # Iterations after which output is 
+num_CUs   	= 20                # Number of tasks or Compute Units
+nsave		= 5                # Iterations after which output is 
                                    #transferred to local machine
 
 #------------------------Simulation----------------------------------------
-num_cores_per_sim_cu = 24      # Number of cores per Simulation Compute Unit
+num_cores_per_sim_cu = 20      # set from 24 to 20 for supermic  Number of cores per Simulation Compute Unit
 initial_crd_file     = './inp_files/bpti.gro'   # Entire path to Coordinates
                                                 #  file - Do not use $HOME 
                                                 #  or the likes
@@ -34,7 +34,7 @@ grompp_2_itp_file    = './inp_files/posre_100.itp' # Entire path to ITP file
                                                    #  the likes
 
 #------------------------Analysis----------------------------------------------
-grid 	= '30'           # Number of points along each dimension of the 
+grid 	= '30'           #  Number of points along each dimension of the 
                          #  CoCo histogram
 dims    = '3'            # The number of projections to consider from the 
                          #  input pcz file
