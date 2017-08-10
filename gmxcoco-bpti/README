@@ -1,0 +1,13 @@
+extasy_gmxcoco.py is a re-written version of extasy_gmxcoco_orig.py, hopefully
+to make it easier to read. But it HAS NOT BEEN TESTED YET!
+
+The files in this folder were originally set up to show the workflow running
+on BlueWaters. Some tweaking of configuration files will be needed.
+
+Charlie 19/2/17
+
+
+Franklin 15/05/17 (day / month/ year)
+
+edited extasy_gmxcoco_orig.py
+needed to change instances of "ENMD" to "ENTK"   

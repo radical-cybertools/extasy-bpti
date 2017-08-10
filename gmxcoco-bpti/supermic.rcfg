@@ -1,0 +1,9 @@
+REMOTE_HOST = 'xsede.supermic'  # Label/Name of the Remote Machine
+UNAME       = 'fbettenc'                  # Username on the Remote Machine
+ALLOCATION  = 'TG-MCB090174'              # Allocation to be charged
+WALLTIME    = 1440                          # Walltime to be requested for the pilot
+PILOTSIZE   = 200                          # Number of cores to be reserved
+WORKDIR     = 'NONE' #/work/fbettenc          # Working directory on the remote machine
+QUEUE       = 'workq'                    # Name of the queue in the remote machine
+
+DBURL       = 'mongodb://franklinb:Dg6w*l08@ds131099.mlab.com:31099/frank01' #'mongodb://extasy:extasyproject@extasy-db.epcc.ed.ac.uk/radicalpilot'          #MongoDB link to be used for coordination purposes
