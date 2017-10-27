@@ -1,0 +1,1 @@
+dirname,num_CUs,approx iters completed,r1 emstep,r1 num steps,r1 total time per iter ,posre_k12,r2 emstep,r2 num steps,r2 total time per iter ,posre_k34,r3 emstep,r3 num steps,r3 total time per iter,num_minlog,num_eqlog,num_xtc,num_min_gro,num_eq_gro,num_coco_gro
