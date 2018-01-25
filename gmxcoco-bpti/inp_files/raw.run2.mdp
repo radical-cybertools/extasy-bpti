@@ -7,14 +7,14 @@
 ; e.g.: -I/home/joe/doe -I/home/mary/roe
 include                  = 
 ; e.g.: -DPOSRES -DFLEXIBLE (note these variable names are case sensitive)
-define                   = -DPOSRES_CA_1000
+define                   = -DPOSRES_CA_k34
 
 ; RUN CONTROL PARAMETERS
 integrator               = sd
 ; Start time and timestep in ps
 tinit                    = 0
 dt                       = 0.002
-nsteps                   = 5000
+nsteps                   = r2nsteps
 ; For exact run continuation or redoing part of a run
 init-step                = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
@@ -52,9 +52,9 @@ nstxout                  = 0
 nstvout                  = 0
 nstfout                  = 0
 ; Output frequency for energies to log file and energy file
-nstlog                   = 200
-nstcalcenergy            = 200
-nstenergy                = 200
+nstlog                   = r2nstlog
+nstcalcenergy            = r2nstlog
+nstenergy                = r2nstlog
 ; Output frequency and precision for .xtc file
 nstxout-compressed       = 0
 compressed-x-precision   = 1000

@@ -1,26 +1,21 @@
 ;
-;	File 'topol.top' was generated
-;	By user: charlie (1123)
-;	On host: tirith.pharm.nottingham.ac.uk
-;	At date: Tue Apr 26 07:43:33 2016
+;	File 'top_cl_sol_1187409s_pdb3.top' was generated
+;	By user: unknown (1000)
+;	On host: corri
+;	At date: Mon Sep 18 14:36:08 2017
 
 ;
 ;	This is a standalone topology file
 ;
 ;	Created by:
-;	                 :-) GROMACS - gmx pdb2gmx, VERSION 5.1.2 (-:
+;	                    :-) GROMACS - gmx pdb2gmx, 2016.3 (-:
 ;	
-;	Executable:   /usr/remote/gromacs/5.1.2/bin/gmx
-;	Data prefix:  /usr/remote/gromacs/5.1.2
+;	Executable:   /usr/bin/gmx
+;	Data prefix:  /usr
+;	Working dir:  /home/feb23/Documents/jha/extasy/bpti/test_new_topo_ion_supp
 ;	Command line:
-;	  gmx pdb2gmx -f 5pti.pdb -ignh -ss yes
-;	Force field data was read from:
-;	/usr/remote/gromacs/5.1.2/share/gromacs/top
-;
-;	Note:
-;	This might be a non-standard force field location. When you use this topology, the
-;	force field must either be present in the current directory, or the location
-;	specified in the GMXLIB path variable or with the 'include' mdp file option.
+;	  gmx pdb2gmx -f cl_sol_1187409s_pdb3.gro -o gro_cl_sol_1187409s_pdb3.gro -p top_cl_sol_1187409s_pdb3.top
+;	Force field was read from the standard GROMACS share directory.
 ;
 
 ; Include forcefield parameters
@@ -28,7 +23,7 @@
 
 [ moleculetype ]
 ; Name            nrexcl
- BPTI                3
+ Protein                3
 
 [ atoms ]
 ;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
@@ -8533,6 +8528,25 @@
   880   884   882   883     4 
   884   891   890   892     4 
 
+[ moleculetype ]
+; Name            nrexcl
+Ion2                3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+; residue 4179 CL  rtp CL   q -1.0
+     1         Cl   4179     CL     CL      1         -1      35.45   ; qtot -1
+; residue 4180 CL  rtp CL   q -1.0
+     2         Cl   4180     CL     CL      2         -1      35.45   ; qtot -2
+; residue 4181 CL  rtp CL   q -1.0
+     3         Cl   4181     CL     CL      3         -1      35.45   ; qtot -3
+; residue 4182 CL  rtp CL   q -1.0
+     4         Cl   4182     CL     CL      4         -1      35.45   ; qtot -4
+; residue 4183 CL  rtp CL   q -1.0
+     5         Cl   4183     CL     CL      5         -1      35.45   ; qtot -5
+; residue 4184 CL  rtp CL   q -1.0
+     6         Cl   4184     CL     CL      6         -1      35.45   ; qtot -6
+
 ; Include Position restraint file
 #ifdef POSRES_10
 #include "posre_10.itp"
@@ -8544,15 +8558,14 @@
 #include "posre_ca_10.itp"
 #endif
 #ifdef POSRES_CA_100
-#include "posre_ca_100.itp"
+#include "cl_sol_posre_ca_100.itp"
 #endif
 #ifdef POSRES_CA_1000
-#include "posre_ca_1000.itp"
+#include "cl_sol_posre_ca_1000.itp"
 #endif
 #ifdef POSRES_CA_10000
-#include "posre_ca_10000.itp"
+#include "cl_sol_posre_ca_10000.itp"
 #endif
-
 
 ; Include water topology
 #include "amber99sb-ildn.ff/tip3p.itp"
@@ -8569,10 +8582,11 @@
 
 [ system ]
 ; Name
-BPTI in water
+GROup of MAchos and Cynical Suckers
 
 [ molecules ]
 ; Compound        #mols
-BPTI                1
-SOL         6541
-CL               6
+Protein             1
+Ion2                1
+SOL              4120
+
