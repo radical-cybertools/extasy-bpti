@@ -1,0 +1,44 @@
+(ve_2018_07_06) feb23@corri:~/Documents/jha/extasy_entk0.6/rad_stack/rp_dev_git/radical.pilot$ pip install .
+Processing /home/feb23/Documents/jha/extasy_entk0.6/rad_stack/rp_dev_git/radical.pilot
+Requirement already satisfied: saga-python>=0.44 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.pilot==0.50.1) (0.47.6)
+Requirement already satisfied: radical.utils>=0.44 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.pilot==0.50.1) (0.50.1)
+Collecting pymongo==2.8 (from radical.pilot==0.50.1)
+  Downloading https://files.pythonhosted.org/packages/d6/2d/580ac9ea77d2b03c53c6f0a7248edf668577d5e1e4b9f37d278f90b52cf0/pymongo-2.8.tar.gz (394kB)
+    100% |████████████████████████████████| 399kB 8.4MB/s 
+Collecting python-hostlist (from radical.pilot==0.50.1)
+  Downloading https://files.pythonhosted.org/packages/3d/0f/1846a7a0bdd5d890b6c07f34be89d1571a6addbe59efe59b7b0777e44924/python-hostlist-1.18.tar.gz
+Requirement already satisfied: netifaces==0.10.4 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.pilot==0.50.1) (0.10.4)
+Requirement already satisfied: setproctitle in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.pilot==0.50.1) (1.1.10)
+Collecting ntplib (from radical.pilot==0.50.1)
+  Downloading https://files.pythonhosted.org/packages/29/8b/85a86e01c510665b0790d3a9fd4532ad98aba9e185a676113a0ae3879350/ntplib-0.3.3.tar.gz
+Collecting msgpack-python (from radical.pilot==0.50.1)
+  Downloading https://files.pythonhosted.org/packages/8a/20/6eca772d1a5830336f84aca1d8198e5a3f4715cd1c7fc36d3cc7f7185091/msgpack-python-0.5.6.tar.gz (138kB)
+    100% |████████████████████████████████| 143kB 8.2MB/s 
+Collecting pyzmq (from radical.pilot==0.50.1)
+  Downloading https://files.pythonhosted.org/packages/5d/b0/3aea046f5519e2e059a225e8c924f897846b608793f890be987d07858b7c/pyzmq-17.0.0-cp27-cp27mu-manylinux1_x86_64.whl (3.0MB)
+    100% |████████████████████████████████| 3.0MB 4.9MB/s 
+Requirement already satisfied: apache-libcloud in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from saga-python>=0.44->radical.pilot==0.50.1) (2.3.0)
+Requirement already satisfied: parse in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from saga-python>=0.44->radical.pilot==0.50.1) (1.8.4)
+Requirement already satisfied: colorama in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.utils>=0.44->radical.pilot==0.50.1) (0.3.9)
+Requirement already satisfied: future in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.utils>=0.44->radical.pilot==0.50.1) (0.16.0)
+Requirement already satisfied: requests in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from apache-libcloud->saga-python>=0.44->radical.pilot==0.50.1) (2.19.1)
+Requirement already satisfied: urllib3<1.24,>=1.21.1 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from requests->apache-libcloud->saga-python>=0.44->radical.pilot==0.50.1) (1.23)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from requests->apache-libcloud->saga-python>=0.44->radical.pilot==0.50.1) (3.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from requests->apache-libcloud->saga-python>=0.44->radical.pilot==0.50.1) (2018.4.16)
+Requirement already satisfied: idna<2.8,>=2.5 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from requests->apache-libcloud->saga-python>=0.44->radical.pilot==0.50.1) (2.7)
+Building wheels for collected packages: radical.pilot, pymongo, python-hostlist, ntplib, msgpack-python
+  Running setup.py bdist_wheel for radical.pilot ... done
+  Stored in directory: /tmp/pip-ephem-wheel-cache-5ok1Ig/wheels/80/fb/6d/57bf66d2416a4cbd99650b3f5c91d10299b1fb894bab286ae5
+  Running setup.py bdist_wheel for pymongo ... done
+  Stored in directory: /home/feb23/.cache/pip/wheels/67/85/9a/d543daae3a2c408b9f3407cff14c97f32687f54a4474f55bcb
+  Running setup.py bdist_wheel for python-hostlist ... done
+  Stored in directory: /home/feb23/.cache/pip/wheels/56/db/1d/b28216dccd982a983d8da66572c497d6a2e485eba7c4d6cba3
+  Running setup.py bdist_wheel for ntplib ... done
+  Stored in directory: /home/feb23/.cache/pip/wheels/23/a7/f8/ff1c6252739b5f83e6a316e293614790221f9d6c48883119d1
+  Running setup.py bdist_wheel for msgpack-python ... done
+  Stored in directory: /home/feb23/.cache/pip/wheels/d5/de/86/7fa56fda12511be47ea0808f3502bc879df4e63ab168ec0406
+Successfully built radical.pilot pymongo python-hostlist ntplib msgpack-python
+Installing collected packages: pymongo, python-hostlist, ntplib, msgpack-python, pyzmq, radical.pilot
+Successfully installed msgpack-python-0.5.6 ntplib-0.3.3 pymongo-2.8 python-hostlist-1.18 pyzmq-17.0.0 radical.pilot-0.50.1
+
+

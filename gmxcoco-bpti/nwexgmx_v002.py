@@ -5,18 +5,26 @@ __copyright__     = "Copyright 2015, http://www.extasy-project.org/"
 __license__       = "MIT"
 __use_case_name__ = "'Gromacs + CoCo' simulation-analysis (ExTASY)."
 
+# UpGrade Extasy ( UGE) - notes 
 
+# UGE - will need to update this from and import calls here to reflect changes 
+# UGE - no longer ensemblemd now need Entk ...etc 
 from radical.ensemblemd import Kernel
 from radical.ensemblemd import EnsemblemdError
 from radical.ensemblemd import SimulationAnalysisLoop
 from radical.ensemblemd import ResourceHandle
 from radical.ensemblemd.engine import get_engine
 
+# UGE - this block is fine. ... may beed to add some things
+# UGE - see extasy/lsd-glsd or w/e for more imports ... 
+
 import imp
 import argparse
 import sys
 import os
 import json
+
+# UGE - this part need work? 
 
 # ------------------------------------------------------------------------------
 # Set default verbosity
@@ -25,8 +33,16 @@ if os.environ.get('RADICAL_ENTK_VERBOSE') == None: #note ENTK was ENMD
     os.environ['RADICAL_ENTK_VERBOSE'] = 'INFO'  #note ENTK was ENMD
 
 # ------------------------------------------------------------------------------
-#Load all custom Kernels
 
+# UGE - this part is not needed any longer bec Kernels will now be seperage exectuables called by tasks
+# UGE - Each kernel will be a stage with a single task? 
+# UGE - OR
+# UGE - shoudl each iter be a stage adn each kernel a task? 
+# UGE - Do tasks happen sequentially or in parallel in this API? 
+# UGE - if tasks happen in paralle then I would think best thing to do woudl be let each kernel be stage ad have 8 stages per iter 
+
+
+#Load all custom Kernels
 from kernel_defs.grompp import grompp_Kernel
 get_engine().add_kernel_plugin(grompp_Kernel)
 
@@ -39,8 +55,11 @@ get_engine().add_kernel_plugin(trjconv_Kernel)
 from kernel_defs.coco import kernel_coco
 get_engine().add_kernel_plugin(kernel_coco)
 
+
+
 # ------------------------------------------------------------------------------
 #
+
 
 class Extasy_CocoGromacs_Static(SimulationAnalysisLoop):            
 

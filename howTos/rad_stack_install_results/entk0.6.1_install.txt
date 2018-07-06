@@ -1,0 +1,60 @@
+(ve_2018_07_06) feb23@corri:~/Documents/jha/extasy_entk0.6/rad_stack$ pip install radical.entk==0.6.1
+Collecting radical.entk==0.6.1
+  Downloading https://files.pythonhosted.org/packages/95/7e/70ce49f1869af47ca661d84ac3c3bf0a4f17ce0ddd98f8ac5b6bf0c081a6/radical.entk-0.6.1.tar.gz (40kB)
+    100% |████████████████████████████████| 51kB 5.9MB/s 
+Requirement already satisfied: radical.utils in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.entk==0.6.1) (0.50.1)
+Collecting pika (from radical.entk==0.6.1)
+  Downloading https://files.pythonhosted.org/packages/bf/48/72de47f63ba353bacd74b76bb65bc63620b0706d8b0471798087cd5a4916/pika-0.12.0-py2.py3-none-any.whl (108kB)
+    100% |████████████████████████████████| 112kB 7.8MB/s 
+Requirement already satisfied: radical.pilot in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.entk==0.6.1) (0.50.1)
+Collecting autodoc (from radical.entk==0.6.1)
+  Downloading https://files.pythonhosted.org/packages/4e/c3/61f746096d2b6c161bd7f3bf8db1fe741b8805cbf0ac9369b4953c37de35/autodoc-0.5.0.tar.gz
+Collecting pytest (from radical.entk==0.6.1)
+  Downloading https://files.pythonhosted.org/packages/77/64/3a76f6fbb0f392d60c5960f2b2fbad8c2b802dada87ca6d1b99c0083a929/pytest-3.6.3-py2.py3-none-any.whl (195kB)
+    100% |████████████████████████████████| 204kB 9.7MB/s 
+Collecting pandas (from radical.entk==0.6.1)
+  Downloading https://files.pythonhosted.org/packages/09/21/f0fc0b6c40b9bca0ed6b61609d27f79cbae97542bbe49e5574f97cc46ad4/pandas-0.23.2-cp27-cp27mu-manylinux1_x86_64.whl (8.9MB)
+    100% |████████████████████████████████| 8.9MB 4.2MB/s 
+Collecting hypothesis (from radical.entk==0.6.1)
+  Downloading https://files.pythonhosted.org/packages/9a/31/7083529a4009828afba36c54c19db31aa92d2df2a423a11b3266100fff68/hypothesis-3.66.0-py2-none-any.whl (214kB)
+    100% |████████████████████████████████| 215kB 437kB/s 
+Collecting sphinx (from radical.entk==0.6.1)
+  Downloading https://files.pythonhosted.org/packages/1b/9f/98d67201c5a6e1aececed03a44a819d0e32adba81414081e303cfaf8c54c/Sphinx-1.7.5-py2.py3-none-any.whl (1.9MB)
+    100% |████████████████████████████████| 1.9MB 9.5MB/s 
+Requirement already satisfied: setproctitle in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.utils->radical.entk==0.6.1) (1.1.10)
+Requirement already satisfied: netifaces==0.10.4 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.utils->radical.entk==0.6.1) (0.10.4)
+Requirement already satisfied: colorama in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.utils->radical.entk==0.6.1) (0.3.9)
+Requirement already satisfied: future in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.utils->radical.entk==0.6.1) (0.16.0)
+Requirement already satisfied: saga-python>=0.44 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.pilot->radical.entk==0.6.1) (0.47.6)
+
+
+############################### skipped lots of lines of installing stuff here #######################################
+
+  Downloading https://files.pythonhosted.org/packages/ee/af/ac32a716d64e56561ee9c23ce45ee2865d7ac4e0678b737d2f5ee49b5fd6/waitress-1.1.0-py2.py3-none-any.whl (114kB)
+    100% |████████████████████████████████| 122kB 13.5MB/s 
+Collecting WebOb>=1.2 (from webtest->autodoc->radical.entk==0.6.1)
+  Downloading https://files.pythonhosted.org/packages/d2/df/9b3b374ea2a82b875a90d1fdcf2c4a652d48f0d1e7c2d1034d636551d4d2/WebOb-1.8.2-py2.py3-none-any.whl (115kB)
+    100% |████████████████████████████████| 122kB 13.4MB/s 
+Collecting beautifulsoup4 (from webtest->autodoc->radical.entk==0.6.1)
+  Downloading https://files.pythonhosted.org/packages/a6/29/bcbd41a916ad3faf517780a0af7d0254e8d6722ff6414723eedba4334531/beautifulsoup4-4.6.0-py2-none-any.whl (86kB)
+    100% |████████████████████████████████| 92kB 12.1MB/s 
+Collecting pyparsing>=2.0.2 (from packaging->sphinx->radical.entk==0.6.1)
+  Downloading https://files.pythonhosted.org/packages/6a/8a/718fd7d3458f9fab8e67186b00abdd345b639976bc7fb3ae722e1b026a50/pyparsing-2.2.0-py2.py3-none-any.whl (56kB)
+    100% |████████████████████████████████| 61kB 13.7MB/s 
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.3->sphinx->radical.entk==0.6.1)
+  Downloading https://files.pythonhosted.org/packages/4d/de/32d741db316d8fdb7680822dd37001ef7a448255de9699ab4bfcbdf4172b/MarkupSafe-1.0.tar.gz
+Requirement already satisfied: urllib3<1.24,>=1.21.1 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from requests>=2.0.0->sphinx->radical.entk==0.6.1) (1.23)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from requests>=2.0.0->sphinx->radical.entk==0.6.1) (3.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from requests>=2.0.0->sphinx->radical.entk==0.6.1) (2018.4.16)
+Requirement already satisfied: idna<2.8,>=2.5 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from requests>=2.0.0->sphinx->radical.entk==0.6.1) (2.7)
+Building wheels for collected packages: radical.entk, autodoc, MarkupSafe
+  Running setup.py bdist_wheel for radical.entk ... done
+  Stored in directory: /home/feb23/.cache/pip/wheels/61/60/a8/564a52b27a4aadd4b5fbe016899bb9735b9f10f9031594b9d4
+  Running setup.py bdist_wheel for autodoc ... done
+  Stored in directory: /home/feb23/.cache/pip/wheels/2f/e7/6d/b5d0f72097c2f957774bc8296e14471a5d9dca309b2b435e60
+  Running setup.py bdist_wheel for MarkupSafe ... done
+  Stored in directory: /home/feb23/.cache/pip/wheels/33/56/20/ebe49a5c612fffe1c5a632146b16596f9e64676768661e4e46
+Successfully built radical.entk autodoc MarkupSafe
+Installing collected packages: pika, waitress, WebOb, beautifulsoup4, six, webtest, decorator, autodoc, more-itertools, py, funcsigs, atomicwrites, pluggy, attrs, pytest, python-dateutil, numpy, pytz, pandas, enum34, coverage, hypothesis, imagesize, babel, pyparsing, packaging, sphinxcontrib-websupport, snowballstemmer, MarkupSafe, Jinja2, alabaster, docutils, typing, Pygments, sphinx, radical.entk
+Successfully installed Jinja2-2.10 MarkupSafe-1.0 Pygments-2.2.0 WebOb-1.8.2 alabaster-0.7.11 atomicwrites-1.1.5 attrs-18.1.0 autodoc-0.5.0 babel-2.6.0 beautifulsoup4-4.6.0 coverage-4.5.1 decorator-4.3.0 docutils-0.14 enum34-1.1.6 funcsigs-1.0.2 hypothesis-3.66.0 imagesize-1.0.0 more-itertools-4.2.0 numpy-1.14.5 packaging-17.1 pandas-0.23.2 pika-0.12.0 pluggy-0.6.0 py-1.5.4 pyparsing-2.2.0 pytest-3.6.3 python-dateutil-2.7.3 pytz-2018.5 radical.entk-0.6.1 six-1.11.0 snowballstemmer-1.2.1 sphinx-1.7.5 sphinxcontrib-websupport-1.1.0 typing-3.6.4 waitress-1.1.0 webtest-2.0.30
+

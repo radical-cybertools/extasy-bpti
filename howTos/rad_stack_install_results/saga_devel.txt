@@ -1,0 +1,34 @@
+(ve_2018_07_06) feb23@corri:~/Documents/jha/extasy_entk0.6/rad_stack/saga_dev_git/saga-python$ pip install . 
+Processing /home/feb23/Documents/jha/extasy_entk0.6/rad_stack/saga_dev_git/saga-python
+Collecting apache-libcloud (from saga-python==0.47.6)
+  Using cached https://files.pythonhosted.org/packages/56/28/45a9d3bba612fc3f47ef085a14446a4f68f45ce10070562edff1e9291150/apache_libcloud-2.3.0-py2.py3-none-any.whl
+Requirement already satisfied: radical.utils in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from saga-python==0.47.6) (0.50.1)
+Collecting parse (from saga-python==0.47.6)
+  Using cached https://files.pythonhosted.org/packages/79/e1/522401e2cb06d09497f2f56baa3b902116c97dec6f448d02b730e63b44a8/parse-1.8.4.tar.gz
+Collecting requests (from apache-libcloud->saga-python==0.47.6)
+  Using cached https://files.pythonhosted.org/packages/65/47/7e02164a2a3db50ed6d8a6ab1d6d60b69c4c3fdf57a284257925dfc12bda/requests-2.19.1-py2.py3-none-any.whl
+Requirement already satisfied: setproctitle in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.utils->saga-python==0.47.6) (1.1.10)
+Requirement already satisfied: netifaces==0.10.4 in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.utils->saga-python==0.47.6) (0.10.4)
+Requirement already satisfied: colorama in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.utils->saga-python==0.47.6) (0.3.9)
+Requirement already satisfied: future in /home/feb23/Documents/jha/extasy_entk0.6/ve_2018_07_06/lib/python2.7/site-packages (from radical.utils->saga-python==0.47.6) (0.16.0)
+Collecting urllib3<1.24,>=1.21.1 (from requests->apache-libcloud->saga-python==0.47.6)
+  Downloading https://files.pythonhosted.org/packages/bd/c9/6fdd990019071a4a32a5e7cb78a1d92c53851ef4f56f62a3486e6a7d8ffb/urllib3-1.23-py2.py3-none-any.whl (133kB)
+    100% |████████████████████████████████| 143kB 6.7MB/s 
+Collecting chardet<3.1.0,>=3.0.2 (from requests->apache-libcloud->saga-python==0.47.6)
+  Downloading https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl (133kB)
+    100% |████████████████████████████████| 143kB 7.5MB/s 
+Collecting certifi>=2017.4.17 (from requests->apache-libcloud->saga-python==0.47.6)
+  Downloading https://files.pythonhosted.org/packages/7c/e6/92ad559b7192d846975fc916b65f667c7b8c3a32bea7372340bfe9a15fa5/certifi-2018.4.16-py2.py3-none-any.whl (150kB)
+    100% |████████████████████████████████| 153kB 8.9MB/s 
+Collecting idna<2.8,>=2.5 (from requests->apache-libcloud->saga-python==0.47.6)
+  Downloading https://files.pythonhosted.org/packages/4b/2a/0276479a4b3caeb8a8c1af2f8e4355746a97fab05a372e4a2c6a6b876165/idna-2.7-py2.py3-none-any.whl (58kB)
+    100% |████████████████████████████████| 61kB 13.9MB/s 
+Building wheels for collected packages: saga-python, parse
+  Running setup.py bdist_wheel for saga-python ... done
+  Stored in directory: /home/feb23/.cache/pip/wheels/c3/a3/8f/0db3f01342755822ebc3e09bec88e86931bb245323745bfe09
+  Running setup.py bdist_wheel for parse ... done
+  Stored in directory: /home/feb23/.cache/pip/wheels/d9/25/e7/8f6f6a0e923b019d09148f5ea711333b94fab03f585e990eee
+Successfully built saga-python parse
+Installing collected packages: urllib3, chardet, certifi, idna, requests, apache-libcloud, parse, saga-python
+Successfully installed apache-libcloud-2.3.0 certifi-2018.4.16 chardet-3.0.4 idna-2.7 parse-1.8.4 requests-2.19.1 saga-python-0.47.6 urllib3-1.23
+

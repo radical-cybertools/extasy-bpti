@@ -1,0 +1,23 @@
+(ve_2018_07_06) feb23@corri:~/Documents/jha/extasy_entk0.6/rad_stack/utils_dev_git/radical.utils$ pip install .
+Processing /home/feb23/Documents/jha/extasy_entk0.6/rad_stack/utils_dev_git/radical.utils
+Collecting future (from radical.utils==0.50.1)
+  Using cached https://files.pythonhosted.org/packages/00/2b/8d082ddfed935f3608cc61140df6dcbf0edea1bc3ab52fb6c29ae3e81e85/future-0.16.0.tar.gz
+Collecting colorama (from radical.utils==0.50.1)
+  Using cached https://files.pythonhosted.org/packages/db/c8/7dcf9dbcb22429512708fe3a547f8b6101c0d02137acbd892505aee57adf/colorama-0.3.9-py2.py3-none-any.whl
+Collecting netifaces==0.10.4 (from radical.utils==0.50.1)
+  Using cached https://files.pythonhosted.org/packages/18/fa/dd13d4910aea339c0bb87d2b3838d8fd923c11869b1f6e741dbd0ff3bc00/netifaces-0.10.4.tar.gz
+Collecting setproctitle (from radical.utils==0.50.1)
+  Downloading https://files.pythonhosted.org/packages/5a/0d/dc0d2234aacba6cf1a729964383e3452c52096dc695581248b548786f2b3/setproctitle-1.1.10.tar.gz
+Building wheels for collected packages: radical.utils, future, netifaces, setproctitle
+  Running setup.py bdist_wheel for radical.utils ... done
+  Stored in directory: /tmp/pip-ephem-wheel-cache-juWMoz/wheels/61/a1/cf/33fe9c0dde5eead3fc2152f7daebb83547a01fc57724ca26a3
+  Running setup.py bdist_wheel for future ... done
+  Stored in directory: /home/feb23/.cache/pip/wheels/bf/c9/a3/c538d90ef17cf7823fa51fc701a7a7a910a80f6a405bf15b1a
+  Running setup.py bdist_wheel for netifaces ... done
+  Stored in directory: /home/feb23/.cache/pip/wheels/16/44/ff/5a544c439c6e1a7cbe437336971781eb73861575d13a538b72
+  Running setup.py bdist_wheel for setproctitle ... done
+  Stored in directory: /home/feb23/.cache/pip/wheels/e6/b1/a6/9719530228e258eba904501fef99d5d85c80d52bd8f14438a3
+Successfully built radical.utils future netifaces setproctitle
+Installing collected packages: future, colorama, netifaces, setproctitle, radical.utils
+Successfully installed colorama-0.3.9 future-0.16.0 netifaces-0.10.4 radical.utils-0.50.1 setproctitle-1.1.10
+
